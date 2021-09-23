@@ -23,8 +23,8 @@ public class HolaMundo {
 		Button saludarButton = new Button();
 		saludarButton.setLabel("Saludar");
 		saludarButton.setBounds(20, 80, 120, 30); //x, y, ancho alto
-		saludarButton.addActionListener(e -> System.out.println("Hola!!!"));
-		
+		//Establecemos un listenes para la pulsación del botón
+		saludarButton.addActionListener(e -> saludoLabel.setText("¡¡¡Hola Mundo!!!")); //Mostramos el saludo en la etiqueta
 		//panel (contenedor) que contiene etiqueta y botón
 		Panel rootPanel = new Panel();
 		rootPanel.setLayout(null);
